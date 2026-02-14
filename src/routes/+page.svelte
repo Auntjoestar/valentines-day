@@ -65,10 +65,7 @@
 
 {#snippet yipeee()}
 	<div class="flex w-full justify-center">
-		<Button
-			content="YIPEEEE :DDD"
-			clickHandler={() => setTimeout(() => new Audio(tbh).play(), 50)}
-		/>
+		<Button content="YIPEEEE :DDD" clickHandler={() => () => new Audio(tbh).play()} />
 	</div>
 {/snippet}
 

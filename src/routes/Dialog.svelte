@@ -12,7 +12,7 @@
 </script>
 
 <div
-	class="flex h-full w-full flex-col items-center justify-center rounded-2xl border-2 border-gray-200 bg-pink-300/75 py-6 shadow-2xl"
+	class="flex h-full w-full flex-col items-center justify-center rounded-2xl border-2 border-gray-200 bg-pink-300/75 shadow-2xl md:py-6"
 >
 	<div class=" mb-2 flex w-full flex-col items-center justify-center gap-2">
 		<p class="text-center text-3xl font-medium">

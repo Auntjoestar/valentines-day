@@ -14,6 +14,6 @@
 		rel="stylesheet"
 	/>
 </svelte:head>
-<div class="h-screen w-full bg-pink-500 px-34 py-2 text-xl text-white">
+<div class="h-screen w-full bg-pink-500 px-2 text-xl text-white md:px-34 md:py-2">
 	{@render children()}
 </div>

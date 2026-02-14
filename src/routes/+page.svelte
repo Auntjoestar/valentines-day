@@ -1,8 +1,8 @@
 <script lang="ts">
-	import heartBear from './../lib/assets/heart_love_bear.gif';
-	import heartBearThrowing from './../lib/assets/heart_throwing.gif';
-	import heartBearEyes from './../lib/assets/heart_eyes.gif';
-	import tbh from './../lib/assets/yippee-tbh.mp3';
+	import heartBear from '$lib/assets/heart_love_bear.gif';
+	import heartBearThrowing from '$lib/assets/heart_throwing.gif';
+	import heartBearEyes from '$lib/assets/heart_eyes.gif';
+	import tbh from '$lib/assets/yippee-tbh.mp3';
 	import Button from './Button.svelte';
 	import type { Dialog as DialogT } from './Dialog';
 	import { dialogState } from './shared.svelte';
@@ -42,7 +42,7 @@
 </script>
 
 {#snippet yesNo()}
-	<div class="flex w-full justify-center gap-42">
+	<div class="flex w-full justify-center gap-20 md:gap-42">
 		<Button
 			content="Sí :)"
 			clickHandler={() => setTimeout(() => (dialogState.dialog = 'yes'), 120)}
@@ -55,7 +55,7 @@
 {/snippet}
 
 {#snippet yes()}
-	<div class="flex w-full justify-center gap-42">
+	<div class="flex w-full justify-center">
 		<Button
 			content="Sí <333"
 			clickHandler={() => setTimeout(() => (dialogState.dialog = 'yes'), 120)}
@@ -64,7 +64,7 @@
 {/snippet}
 
 {#snippet yipeee()}
-	<div class="flex w-full justify-center gap-42">
+	<div class="flex w-full justify-center">
 		<Button
 			content="YIPEEEE :DDD"
 			clickHandler={() => setTimeout(() => new Audio(tbh).play(), 50)}
@@ -72,7 +72,7 @@
 	</div>
 {/snippet}
 
-<div class="flex h-full w-full items-center justify-center px-30 py-10">
+<div class="flex h-full w-full items-center justify-center py-10 md:px-30">
 	<Dialog dialog={dialog.content} imgSrc={dialog.image} imgAlt={dialog.imageAlt}>
 		{@render dialog.buttons()}
 	</Dialog>
